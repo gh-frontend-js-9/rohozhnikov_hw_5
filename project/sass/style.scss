@@ -1,0 +1,229 @@
+body {
+	color: #314a5b;
+	margin: 0 auto;
+	font-size: 14px;
+	max-width: 1370px;
+	font-family: Montserrat, sans-serif;
+}
+
+.wrap {
+	height: 1057px;
+	background: url('../img/wrapbg.png') no-repeat center;
+}
+
+a {text-decoration: none;}
+ul {list-style-type: none;}
+
+.wrapper {
+	display: flex;
+	margin: 0 15%;
+}
+
+header {
+	.wrapper {
+		@extend .wrapper; 
+		justify-content: space-between;
+	}
+
+	.logo {
+		background: #fa5c65;
+		padding: 43px 14px 14px 14px;
+		border-bottom: 1px transparent;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+
+		a{
+			color: #fff;
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 63.95px;
+			letter-spacing: 0.3px;
+			font-family: Domine, sans-serif;
+			span {color: #314a5b;}
+		}
+	}
+
+	ul {
+		padding: 0;
+		display: flex;
+		li a {
+			color: #263742;
+			font-weight: 400;
+			margin-left: 40px;
+			text-transform: uppercase;
+			i {color: #fa5c65;}
+			&:last-child {margin-left: 20px;}
+		}
+
+	}
+}
+
+.intelligence {
+	@extend .wrapper;
+	div {flex-basis: 510px;}
+	h1 {
+		font-size: 48px;
+		font-weight: 700;
+		margin: 306px 0 26px 0;
+		letter-spacing: -1.44px;
+		text-transform: uppercase;
+		span{
+			margin: 0;
+			color: #fa5c65;
+		}
+	}
+	span {
+		display: block;
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0 0 41px 0;
+		font-family: "Open Sans", sans-serif;
+	}
+	button {
+		color: #fff;
+		border: none;
+		display: block;
+		cursor: pointer;
+		font-size: 15px;
+		font-weight: 700;
+		padding: 25px 45px;
+		background: #fa5c65;
+		border-radius: 10px;
+		text-transform: uppercase;
+		font-family: "Open Sans", sans-serif;
+	}	
+}
+
+main {
+	.about {
+		.wrapper {
+			justify-content: space-between;
+			div {flex-basis: 255px}
+		}
+		h3 {
+			color: #465065;
+			font-size: 26px;
+			font-weight: 700;
+			text-transform: uppercase;
+			i {color: #f0454c;}
+		}
+
+		span {
+			color: #9aa0ab;
+			font-size: 15px;
+			font-weight: 400;
+			font-family: "Open Sans", sans-serif;
+		}
+		a {
+			color: #f0454c;
+			display: block;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	.portfolio {
+		.wrapper-item {
+			flex-basis: 50%;
+			.MacBook {
+				width: 398px;
+				height: 301px;
+				background: url('../img/MacBook.png') no-repeat;
+			}
+			h2 {
+				font-size: 40px;
+				text-transform: uppercase;
+				i{color: #f0454c;}
+			}
+			p {
+				color: #9aa0ab;
+				font-size: 15px;
+				font-weight: 400;
+				line-height: 22px;
+				font-family: "Open Sans", sans-serif;
+				span{
+					color: #314a5b;
+					display: block;
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+			a {
+				color: #f0454c;
+				display: block;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}		
+	}
+	.team {
+		&-wrapper {
+			margin: 0 15%;
+			h3 {
+				font-size: 32px;
+				font-weight: 700;
+				text-transform: uppercase;
+				i {color: #f0454c;}
+			}
+			&__span {
+				font-size: 16px;
+				font-weight: 400;
+				font-family: "Open Sans", sans-serif;
+			}
+			&__wrap {
+				display: flex;
+				.team-wrapper-wrap__item {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					img {
+						width: 120px;
+						height: 120px;
+					}
+					h4 {
+						font-size: 22px;
+						font-weight: 700;
+						text-transform: uppercase;
+					}
+					span {
+						color: #f0454c;
+						font-size: 14px;
+						font-weight: 400;
+						font-family: "Open Sans", sans-serif;
+					}
+					p {
+						color: #9aa0ab;
+						font-size: 14px;
+						font-weight: 400;
+						font-family: "Open Sans", sans-serif;
+					}
+				}
+			}
+			a {
+				color: #f0454c;
+				display: block;
+				font-weight: bold;
+				text-align: right;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+}
+
+footer {
+	color: #b9c0c6;
+	font-size: 13px;
+	justify-content: space-between;
+	font-family: "Open Sans", sans-serif;
+	.links {
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		li {margin-right: 11px;}
+		a {
+			color: #b9c0c6;
+			font-size: 16px;
+		}
+	}
+}
