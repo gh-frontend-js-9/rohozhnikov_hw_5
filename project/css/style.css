@@ -116,6 +116,10 @@ main .about .wrapper div, main .about .intelligence div {
   margin-right: 63px;
 }
 
+main .about .wrapper :nth-child(2) h3, main .about .intelligence :nth-child(2) h3 {
+  padding-right: 30px;
+}
+
 main .about .wrapper div:last-child, main .about .intelligence div:last-child {
   margin-right: 0;
 }
@@ -130,6 +134,10 @@ main .about h3 {
 
 main .about h3 i {
   color: #f0454c;
+}
+
+main .about h3:first-child {
+  padding-right: 115px;
 }
 
 main .about span {
@@ -231,6 +239,7 @@ main .team-wrapper__wrap .team-wrapper-wrap__item:last-child {
 main .team-wrapper__wrap .team-wrapper-wrap__item img {
   width: 120px;
   height: 120px;
+  margin-right: 20px;
 }
 
 main .team-wrapper__wrap .team-wrapper-wrap__item h4 {
