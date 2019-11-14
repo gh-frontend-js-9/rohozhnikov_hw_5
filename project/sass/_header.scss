@@ -1,0 +1,96 @@
+.page_row {
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+	background: no-repeat center 0 / cover;
+	.wrapper {
+		@extend %flex;
+		height: 100%;
+	}
+	.header {
+		@extend %flex;
+		flex-basis: 100%;
+		align-self: flex-start;
+		justify-content: space-between;
+		&__logo{
+			display: block;
+			background: $red;
+    		padding: 43px 14px 14px 14px;
+    		border-bottom: 1px transparent;
+    		border-bottom-left-radius: 10px;
+    		border-bottom-right-radius: 10px;
+    		.text--point {color: $gray;}
+    		&:hover {
+    			background: $gray;
+    			.text--point {color: $red;}
+    		}
+    		.logo {
+    			color: #fff;
+    			font-weight: 700;
+    			font-size: 1.25rem;
+    			letter-spacing: 0.3px;
+    			font-family: $Domine;		
+    		}
+		}
+		.nav {
+			.nav__list {
+				@extend %ul, %flex;
+				margin-top: 1.5625rem;
+				.nav__item {
+					margin-left: 30px;
+					.link {
+						color: $darkGray;
+    					font-weight: 400;
+    					margin-left: 40px;
+    					font-family: $Montserrat;
+    					text-transform: uppercase;
+    					&:hover {
+    						color: $red;
+    					}
+					}
+					&--color{
+						.link{
+							color: #fa5c65;
+							transition: all 0.3s ease;
+							@include addPrefix(filter,grayscale(100%));
+							&:hover{@include addPrefix(filter,grayscale(0));}
+						}
+					}
+				}
+			}
+		}
+	}
+	.section {
+		max-width: 58%;
+		.headline {
+			color: $gray;
+			font-size: 48px;
+    		font-weight: 700;
+    		font-family: $Montserrat;
+    		margin: 0 0 26px 0;
+    		text-transform: uppercase;
+		}
+		.slogan {
+			color: $gray; 
+    		font-size: 20px;
+    		font-weight: 400;
+    		margin: 0 0 71px 0;
+    		font-family: $OpenSans;
+		}
+		.link__bth {
+			display: block;
+			margin-top: 15px;
+			&--text {
+				color: #fff;
+    			font-size: 15px;
+    			font-weight: 700;
+    			background: $red;
+    			padding: 25px 45px;
+    			border-radius: 10px;
+    			font-family: $OpenSans;
+    			text-transform: uppercase;
+    			&:hover {background: $gray;}
+			}
+		}
+	}
+}

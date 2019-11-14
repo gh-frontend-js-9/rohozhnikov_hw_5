@@ -1,0 +1,106 @@
+main {
+	.articles {
+		.wrapper{
+			@extend %flex;
+			justify-content: space-between;
+			.wrapper__item {
+				flex-basis: 255px;
+				.headline {
+					color: $gray;
+					font-size: 26px;
+					font-weight: 700;
+					margin: 86px 0 24px 0;
+					font-family: $Montserrat;
+					text-transform: uppercase;
+				}
+				.item__description {
+					color: $lightgray;
+					font-size: 15px;
+					font-weight: 400;
+					font-family: $OpenSans;
+				}
+				.link {
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.portfolio {
+		.wrapper {
+			@extend %flex;
+			justify-content: space-between;
+			&__item {
+				flex-basis: 50%;
+				.text {
+    				font-size: 15px;
+    				/*line-height: 22;*/
+    				font-weight: 400;
+    				color: $lightgray;
+    				/*margin: 0 0 35px 0;*/
+    				font-family: $OpenSans;
+					.text--color {
+						color: $gray;
+						display: block;
+						font-size: 16px;
+						font-weight: bold;
+						margin-bottom: 29px;
+					}
+				}
+			}
+		}
+	}
+	.tem {
+		&__slogan {
+			font-size: 16px;
+    		font-weight: 400;
+    		color: $lightgray;
+   		 	font-family: $OpenSans;	
+		}
+		.wrapper__items {
+			@extend %flex;
+			flex-wrap: nowrap;
+			.wrapper__item {
+				@extend %flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				margin: 40px 40px 0 0;
+				justify-content: space-between;
+				&:last-child {margin-right: 0;}
+				&--avatar {
+					width: 120px;
+    				height: 120px;
+    				margin-right: 20px;
+				}
+				.container__username {
+					color: $gray;
+					font-size: 22px;
+    				font-weight: 700;
+    				margin: 18px 0 11px 0;
+    				font-family: $Montserrat;
+    				text-transform: uppercase;
+				}
+				.container_position {
+					color: #f0454c;
+    				font-size: 14px;
+    				font-weight: 400;
+    				font-family: $OpenSans;
+
+				}
+				.container__text {
+    				font-size: 14px;
+    				font-weight: 400;
+    				color: $lightgray;
+    				margin: 14px 0 0 0;
+    				font-family: $OpenSans;
+				}
+			}
+		}
+		.btn--more {
+			text-align: right;
+			margin: 56px 0 62px 0;
+		}
+		.horizontal-line {
+			margin: 0 0 35px 0;
+		}
+	}
+}
