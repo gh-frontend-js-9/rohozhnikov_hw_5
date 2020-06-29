@@ -1,0 +1,71 @@
+.work {
+    &__wrapper {
+        @media screen and (min-width: 768px) {flex-direction: column;}
+    }
+    &__title {
+        margin-top: 45px;
+        margin-bottom: 16px;
+        @media screen and (min-width: 992px) {margin-top: 105px;}
+    }
+    &__slogan {
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        color: $darkGrayish;
+        font-family: "Open Sans", sans-serif;
+        @media screen and (min-width: 768px) {text-align: start;}
+    }
+    &__holder {
+        @media screen and (min-width: 768px) {display: flex;}
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        justify-content: center;
+        @media screen and (min-width: 768px) {
+            margin-right: 40px;
+            align-items: start;
+            flex-direction: column;
+            justify-content: space-between;
+            &:last-child {margin-right: 0;}
+        }
+        @media screen and (min-width: 992px) {flex-direction: row;}
+    }
+    &__inner {
+        width: 300px;
+        @media screen and (min-width: 768px) {width: auto;}
+    }
+    &__avatar {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        &:hover {
+            @extend  %filter;
+            @extend %pointer;
+        }
+    }
+    &__user {
+        font-size: 22px;
+        text-align: start;
+        margin: 18px 0 11px 0;
+    }
+    &__job {
+        color: $brightRed;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+    }
+    &__preferences {
+        font-size: 14px;
+        font-weight: 400;
+        color: $darkGrayish;
+        margin: 14px 0 0 0;
+        font-family: "Open Sans", sans-serif;
+    }
+    &__more {
+        text-align: right;
+        margin: 56px 0 62px 0;
+    }
+    &--line {margin: 0 0 35px 0;}
+}

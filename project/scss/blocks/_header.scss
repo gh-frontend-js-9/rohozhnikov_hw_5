@@ -1,0 +1,93 @@
+.header {
+    &__wrapper {flex-direction: row;}
+    &__logo {
+        height: 24px;
+        background: $softRed;
+		padding: 43px 14px 14px 14px;
+		border-bottom: 1px transparent;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+    }
+    &__menu {
+        padding: 0;
+        @media screen and (min-width: 768px) {display: flex;}
+    }
+    &__item {
+        padding: 10px 0;
+        &:nth-child(5) {display: inline;}
+        &:last-child {display: inline;}
+        &:hover {
+            @extend %pointer;
+            color: $softRed;
+            filter: drop-shadow(0 0 0.2rem $magentaYellow);
+        }
+        @media screen and (min-width: 992px) {padding: 0;}
+    }
+    &__link {
+        color: #263742;
+        font-weight: 400;
+        margin-left: 40px;
+        text-transform: uppercase;
+        &:last-child {margin-left: 20px;}
+        .fab {color: $softRed;}
+    }
+}
+
+.logo {
+    &__link {
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        font-family: Domine, sans-serif;
+        &--color {color: $blackBlue;}
+    }
+    &:hover {
+        @extend %pointer;
+        background-color: $brightRed;
+    }
+}
+
+.intelligence {
+    &__inner {flex-basis: 510px;}
+    &__title {
+        font-size: 39px;
+        max-width: 520px;
+        text-align: start;
+        letter-spacing: -1.44px;
+        @media screen and (min-width: 576px) {font-size: 48px;}
+        @media screen and (min-width: 768px) {margin: 306px 0 26px 0;}
+    }
+    &__slogan {
+        display: block;
+		font-size: 20px;
+		font-weight: 400;
+		margin: 0 0 41px 0;
+		font-family: "Open Sans", sans-serif;
+    }
+    &__button {
+		border: none;
+        color: $white;
+		display: block;
+		font-size: 15px;
+		font-weight: 700;
+		padding: 25px 45px;
+		border-radius: 10px;
+		background: $softRed;
+		text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+        &:hover {
+            @extend %pointer;
+            text-decoration: underline;
+            background-color: $brightRed;
+        }
+    }
+}
+
+.wrap {
+    height: 620px;
+    background-size: cover !important;
+    background: url('../img/wrapbg.png') no-repeat right center;
+    @media screen and (min-width: 768px) {height: 768px;}
+    @media screen and (min-width: 992px) {height: 1057px;}
+}
