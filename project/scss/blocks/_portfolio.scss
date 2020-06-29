@@ -1,0 +1,46 @@
+.portfolio {
+    &__item {flex-basis: 50%;}
+    &__content {
+        height: 143px;
+        max-width: 90%;
+        transform: rotate(25deg);
+        margin: 0 calc(50% - 143px);
+        margin-bottom: 50px !important;
+        background: url('../img/mobMacBook.png') no-repeat;
+        &:hover {
+            @extend  %filter;
+            @extend %pointer;
+        }
+        @media screen and (min-width: 768px) {
+            margin: 0;
+            width: 398px;
+            height: 301px;
+            margin-bottom: 0;
+            transform: inherit;
+            background: url('../img/MacBook.png') no-repeat;
+        }
+    }
+    &__title {
+        font-size: 40px;
+        margin: 0 0 17px 0;
+    }
+    &__text {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0 0 35px 0;
+        color: $darkGrayish;
+        font-family: "Open Sans", sans-serif;
+    }
+    &__slogan {
+        display: block;
+        font-size: 16px;
+        color: $blackBlue;
+        font-weight: bold;
+        margin-bottom: 29px;
+    }
+    &__more {
+        margin-top: 29px;
+        @media screen and (min-width: 768px) {margin-top: 45px;}
+    }
+}

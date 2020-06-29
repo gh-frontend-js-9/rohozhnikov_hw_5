@@ -9,140 +9,202 @@
 	<title>Freelancer</title>
 </head>
 <body>
-	<div class="page_row" style="background-image: url(img/wrapbg.png); height: 1057px;">
-		<div class="wrapper">
-			<header class="header">
-				<div class="header__logo">
-					<a href="#" class="logo link">Freelancer<i class="text--point">.</i></a>
+	<div class="wrap">
+		<header class="header">
+			<div class="header__wrapper wrapper">
+				<div class="header__logo logo">
+					<a class="logo__link" href="#">
+						Freelancer<span class="logo__link--color">.</span>
+					</a>
 				</div>
-				<nav class="nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a href="#" class="link">About</a>
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li class="header__item">
+							<a class="header__link" href="#about">About</a>
 						</li>
-						<li class="nav__item">
-							<a href="#" class="link">Work</a>
+						<li class="header__item">
+							<a class="header__link" href="#work">Work</a>
 						</li>
-						<li class="nav__item">
-							<a href="#" class="link">Portfolio</a>
+						<li class="header__item">
+							<a class="header__link" href="#portf">Portfolio</a>
 						</li>
-						<li class="nav__item">
-							<a href="#" class="link">Contact</a>
+						<li class="header__item">
+							<a class="header__link" href="#cont">Contact</a>
 						</li>
-						<li class="nav__item nav__item--color">
-							<a href="#" class="link"><i class="fab fa-twitter link__fab--color"></i></a>
-							<a href="#" class="link"><i class="fab fa-facebook-f link__fab--color"></i></a>
+						<li class="header__item">
+							<a class="header__link" href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="header__item">
+							<a class="header__link" href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
 						</li>
 					</ul>
 				</nav>
-			</header>
-			<section class="section">
-				<h1 class="headline">intelligence is nothing without ambition<i class="text--point">.</i></h1>
-				<div class="slogan">We’re small but impressive creative agency.</div>
-				<a href="" class="link link__bth"><span class="link__bth--text">READ MORE</span></a>
-			</section>
-		</div>
-	</div>
-	<main>
-		<section class="articles">
-			<div class="wrapper">
-				<div class="wrapper__item">
-					<h3 class="headline">Peace of Mind</h3>
-					<span class="item__description">You’re safe with us. The privacy and security of your financial information is our top priority.</span>
-					<a href="#" class="link btn--more">more</a>
-				</div>
-				<div class="wrapper__item">
-					<h3 class="headline">Free<i class="text--point">.</i> Actually free</h3>
-					<span class="item__description">No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</span>
-					<a href="#" class="link btn--more">more</a>
-				</div>
-				<div class="wrapper__item">
-					<h3 class="headline">Simple payments<i class="text--point">.</i></h3>
-					<span class="item__description">The same debit card you use to buy coffee lets deposit money straight to your bank account.</span>
-					<a href="#" class="link btn--more">more</a>
-				</div>
+			</div>
+		</header>
+		<section class="intelligence wrapper">
+			<div class="intelligence__inner">
+				<h1 class="intelligence__title title">
+					inteligenceis nothing without ambition
+					<span class="title--color">.</span>
+				</h1>
+				<span class="intelligence__slogan">
+					We’re small but impressive creative agency.
+				</span>
+				<button class="intelligence__button">READ MORE</button>
 			</div>
 		</section>
-		<section class="portfolio">
-			<div class="wrapper">
-				<div class="wrapper__item">
-					<img src="img/MacBook.png" alt="MacBook">
+	</div>
+	<main class="main">
+		<section class="about" id="about">
+			<div class="about__wrapper wrapper">
+				<div class="about__item">
+					<h3 class="about__title title">
+						Peace 
+						of&nbsp;Mind<span class="title--color">.</span>
+					</h3>
+					<span class="about__text">
+						You’re safe with us. The privacy and security of your 
+						financial information is our top priority.
+					</span>
+					<a class="about__more more" href="#">
+						More <i class="fas fa-arrow-right"></i>
+					</a>
 				</div>
-				<div class="wrapper__item">
-					<h2 class="title">portfolio<i class="text--point">.</i></h2>
-					<p class="text">
-						<span class="text--color">We are small, but strong team</span>
+				<div class="about__item">
+					<h3 class="about__title title">
+						Free<span class="title--color">.</span> 
+						Actually&nbsp;free
+					</h3>
+					<span class="about__text">
+						No more pricing grids. No more fine print. Sending 
+						and receiving cash is free without gimmicks.
+					</span>
+					<a class="about__more more" href="#">
+						More <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+				<div class="about__item">
+					<h3 class="about__title title">
+						Simple 
+						payments<span class="title--color">.</span>
+					</h3>
+					<span class="about__text">
+						The same debit card you use to buy coffee lets 
+						deposit money straight to your bank account.
+					</span>
+					<a class="about__more more" href="#">
+						More <i class="fas fa-arrow-right"></i>
+					</a>
+				</div>
+			</div>
+		</section> 
+		<section class="portfolio" id="portf">
+			<div class="portfolio__wrapper wrapper">
+				<div class="portfolio__item">
+					<div class="portfolio__content"></div>
+				</div>
+				<div class="portfolio__item">
+					<h2 class="portfolio__title title">
+						portfolio
+						<span class="title--color">.</span>
+					</h2>
+					<p class="portfolio__text">
+						<span class="portfolio__slogan">
+							We are small, but strong team
+						</span>
 						No more pricing grids. No more fine print.
 						Sending and receiving cash is free without gimmicks.
 					</p>
-					<p class="text">
-						The same debit card you use to buy coffee lets deposit money straight to your bank account.
+					<p class="portfolio__text">
+						The same debit card you use to buy coffee lets deposit 
+						money straight to your bank account.
 					</p>
-					<a href="#" class="link btn--more">More</a>
+					<a href="#" class="portfolio__more more">
+						More <i class="fas fa-arrow-right"></i>
+					</a>
 				</div>
 			</div>
 		</section>
-		<section class="tem">
-			<div class="wrapper">
-				<h3 class="title">our team<i class="text--point">.</i></h3>
-				<span class="tem__slogan">They are big but still friendly.</span>
-				<div class="wrapper__items">
-					<div class="wrapper__item">
-						<img class="wrapper__item--avatar" src="img/Joey.png" alt="avatar">
-						<div class="container">
-							<h4 class="container__username">Joey</h4>
-							<span class="container_position">Web developer</span>
-							<p class="container__text">Coffee lover.  Always on bike. iPhone fan.</p>
+		<section class="work" id="work">
+			<div class="work__wrapper wrapper">	
+				<h3 class="work__title title">
+					our team
+					<span class="title--color">.</span>
+				</h3>
+				<span class="work__slogan">
+					They are big but still friendly.
+				</span>
+				<div class="work__holder">
+					<div class="work__item">
+						<img class="work__avatar" src="img/Joey.png" alt="avatar">
+						<div class="work__inner">
+							<div class="work__user title">Joey</div>
+							<span class="work__job">Web developer</span>
+							<p class="work__preferences">
+								Coffee lover.  Always on bike. iPhone fan.
+							</p>
 						</div>
 					</div>
-					<div class="wrapper__item">
-						<img class="wrapper__item--avatar" src="img/Matt.png" alt="avatar">
-						<div class="container">
-							<h4 class="container__username">Matt</h4>
-							<span class="container_position">Web designer</span>
-							<p class="container__text">MTB Biker. Photoshop Master. Loving Father.</p>
+					<div class="work__item">
+						<img class="work__avatar" src="img/Matt.png" alt="avatar">
+						<div class="work__inner">
+							<div class="work__user title">Matt</div>
+							<span class="work__job">Web designer</span>
+							<p class="work__preferences">
+								MTB Biker. Photoshop Master. Loving Father.
+							</p>
 						</div>
 					</div>
-					<div class="wrapper__item">
-						<img class="wrapper__item--avatar" src="img/mikk.png" alt="avatar">
-						<div class="container">
-							<h4 class="container__username">Mike</h4>
-							<span class="container_position">Copywriter</span>
-							<p class="container__text">Drummer. Soup lover. Beer Drinker. Cyclist.</p>
+					<div class="work__item">
+						<img class="work__avatar" src="img/mikk.png" alt="avatar">
+						<div class="work__inner">
+							<div class="work__user title">Mike</div>
+							<span class="work__job">Copywriter</span>
+							<p class="work__preferences">
+								Drummer. Soup lover. Beer Drinker. Cyclist.
+							</p>
 						</div>
 					</div>
 				</div>
-				<a href="#" class="link btn--more">More</a>
-				<hr class="horizontal-line">
+				<a class="work__more more" href="#">
+					More <i class="fas fa-arrow-right"></i>
+				</a>
+				<hr class="work--line">
 			</div>
 		</section>
 	</main>
-	<footer class="wrapper">
-		<div class="container">
-			<ul class="socials">
-				<li class="socials__item">
-					<a href="#" class="link">
+	<footer class="footer" id="cont">
+		<div class="footer__wrapper  wrapper">
+			<ul class="footer__socials">
+				<li class="footer__item">
+					<a class="footer__link" href="#">
 						<i class="fab fa-twitter"></i>
 					</a>
 				</li>
-				<li class="socials__item">
-					<a href="#" class="link">
+				<li class="footer__item">
+					<a class="footer__link" href="#">
 						<i class="fab fa-instagram"></i>
 					</a>
 				</li>
-				<li class="socials__item">
-					<a href="#" class="link">
+				<li class="footer__item">
+					<a class="footer__link" href="#">
 						<i class="fab fa-facebook-f"></i>
 					</a>
 				</li>
-				<li class="socials__item">
-					<a href="#" class="link">
+				<li class="footer__item">
+					<a class="footer__link" href="#">
 						<i class="fab fa-google-plus-g"></i>
 					</a>
 				</li>
 			</ul>
+			<div class="footer__copyright">
+				© Freelancer - Designed by Wojtek Kwiatkowski
+			</div>
 		</div>
-		<div class="copyright">© Freelancer - Designed by Wojtek Kwiatkowski</div>
 	</footer>
 </body>
 </html>
